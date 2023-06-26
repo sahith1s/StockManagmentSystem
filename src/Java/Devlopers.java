@@ -1,0 +1,70 @@
+package Java;
+import javax.swing.*;
+import java.awt.color.*;
+import java.awt.*;
+import javax.swing.border.LineBorder;
+import javax.swing.border.Border;
+public class Devlopers extends JFrame {
+Devlopers(){
+	Font f=new Font("Comic sans ms",Font.BOLD,20);
+	setTitle("MOBILE STOCKS MANAGEMENT //... developers");
+	JLabel name=new JLabel("DEVELOPED BY.......");
+	JLabel name1=new JLabel("Info Tech ");
+	JLabel name2=new JLabel("--B");
+	name2.setForeground(Color.BLACK);
+	name2.setBounds(760,320,300,30);
+	name2.setFont(f);
+	add(name2);
+	name.setForeground(Color.WHITE);
+	name.setBounds(550,80,300,30);
+	name.setFont(f);
+	add(name);
+	name1.setForeground(Color.WHITE);
+	name1.setBounds(660,320,300,30);
+	name1.setFont(f);
+	add(name1);
+	setSize(900,600);
+	setLayout(null);
+	setResizable(false);
+	ImageIcon background_image=new ImageIcon("src/images/n.jpg");
+	    ImageIcon image1=new ImageIcon("msmsm.png");
+	    setIconImage(image1.getImage());
+	    Border border = new LineBorder(Color.WHITE,2);
+	    JPanel w=new JPanel();
+	    w.setSize(300,200);
+	    w.setBackground(new Color(0,0,0,100));
+	    w.setBounds(550,120,300,200);
+	    w.setBorder(border);
+	    JLabel l=new JLabel(" ------- p.sahith ");
+	    JLabel l1=new JLabel(" k.vishali ------- ");
+	    JLabel l2=new JLabel(" ------- y.c.v.vikram ");
+	    JLabel l3=new JLabel(" k.yojitha ------- ");
+	    JLabel l4=new JLabel(" ------- p.sai kamal ");
+	    l.setForeground(Color.WHITE);
+	    l1.setForeground(Color.WHITE);
+	    l2.setForeground(Color.WHITE);
+	    l3.setForeground(Color.WHITE);
+	    l4.setForeground(Color.WHITE);
+	    l.setFont(f);
+	    l1.setFont(f);
+	    l2.setFont(f);
+	    l3.setFont(f);
+	    l4.setFont(f);
+	    w.add(l);
+	    w.add(l1);
+	    w.add(l2);
+	    w.add(l3);
+	    w.add(l4);
+		Image img =background_image.getImage();
+		Image temp_img=img.getScaledInstance(900, 600, Image.SCALE_SMOOTH);
+		background_image =new ImageIcon(temp_img);
+	    JLabel background=new JLabel("",background_image,JLabel.CENTER);
+	    background.add(w);
+	    background.setBounds(0, 0, 900, 600);
+		add(background);
+	setVisible(true);
+}
+public static void main(String args[]) {
+	new Devlopers();
+}
+}
